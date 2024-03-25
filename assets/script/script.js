@@ -20,3 +20,24 @@ segundos.textContent = sec;
 
 
 })
+
+let anima = document.getElementById('img')
+function myFunOn (){
+    anima.style.animationDuration = 3+"s";
+}
+
+function myFunOff() {
+    anima.style.animationDuration = 0+"s";
+}
+
+function myFun1 (){
+    anima.style.animationDuration = 1+"s";
+}
+
+function myFun2 (){
+    anima.style.animationDuration = 0.6+"s";
+}
+
+function myFun3 (){
+    anima.style.animationDuration = 0.2+"s";
+}

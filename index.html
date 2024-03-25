@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relógio Digital</title>
-    <link rel="stylesheet" href="assets/estilos/style.css"></head>
+    <link rel="stylesheet" href="assets/estilos/style.css">
+</head>
 
 <body>
-    
+
     <div class="relogio">
 
         <div>
             <span id="horas">00</span>
             <span class="tempo">Horas</span>
         </div>
-        
+
         <div>
             <span id="minutos">00</span>
             <span class="tempo">Minutos</span>
@@ -25,7 +27,17 @@
             <span id="segundos">00</span>
             <span class="tempo">Segundos</span>
         </div>
+    </div>
 
+    <div class="ventilador">
+        <img src="assets/imagens/fan.png" alt="" id="img">
+        <div class="btns">
+            <button onclick="myFunOn()">ON</button>
+            <button onclick="myFunOff()">OFF</button>
+            <button onclick="myFun1()">1</button>
+            <button onclick="myFun2()">2</button>
+            <button onclick="myFun3()">3</button>
+        </div>
     </div>
 
     <script src="assets/script/script.js"></script>

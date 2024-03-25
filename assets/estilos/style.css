@@ -13,8 +13,61 @@ body {
     height: 100vh;
     background: linear-gradient(120deg, #56ffe3d8, #005296da);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.ventilador {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+img {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border-radius: 50%;
+    animation: fananim linear infinite;
+}
+
+.btns {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+button {
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    padding: 20px 30px;
+    margin: 0 50px;
+    font-size: 55px;
+    font-weight: 550;
+    border: none;
+    background-color: silver;
+    border-radius: 50%;
+    transition: 0.1s;
+}
+
+button:active{
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.400);
+    transform: scale(0.95);
+}
+
+.btns button:nth-last-child(5){
+    background-color: rgb(0, 255, 0);
+}
+
+.btns button:nth-last-child(4){
+    background-color: rgb(255, 0, 0);
+}
+
+@keyframes fananim {
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 .relogio {
